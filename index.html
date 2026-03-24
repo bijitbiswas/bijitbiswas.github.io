@@ -3,95 +3,214 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bijit Biswas - Personal Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    section {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #333;
-      border-bottom: 2px solid #333;
-      padding-bottom: 10px;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: white;
-    }
-  </style>
+  <meta name="description" content="Bijit Biswas — SDET at Autodesk. Test automation, Selenium, Appium, API and performance testing.">
+  <meta property="og:title" content="Bijit Biswas — SDET & Test Automation">
+  <meta property="og:description" content="Profile of Bijit Biswas: software development engineer in test, automation frameworks, web and mobile quality.">
+  <meta property="og:type" content="website">
+  <title>Bijit Biswas — SDET & Test Automation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Bijit Biswas</h1>
-    <p>Software Testing Professional</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-name">Bijit Biswas</span>
+      <span class="brand-title">SDET</span>
+    </div>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="site-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#/" data-route="/">Home</a></li>
+        <li><a href="#/about" data-route="/about">About</a></li>
+        <li><a href="#/experience" data-route="/experience">Experience</a></li>
+        <li><a href="#/skills" data-route="/skills">Skills</a></li>
+        <li><a href="#/education" data-route="/education">Education</a></li>
+        <li><a href="#/projects" data-route="/projects">Projects</a></li>
+        <li><a href="#/contact" data-route="/contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am currently working in Autodesk with an overall experience of 9+ years in Software testing. During these years I have had experience in Manual and Automation testing for both Web and Mobile Native applications. I have worked on multiple automation tools like Appium, Selenium, Playwright, Postman and RestAssured. I have experience in building frameworks from scratch.</p>
-  </section>
+  <main id="main">
+    <section id="view-home" class="view active" tabindex="-1" aria-label="Home">
+      <div class="hero">
+        <h1>Bijit Biswas</h1>
+        <p class="tagline">Software Development Engineer in Test (SDET)</p>
+        <p class="hero-lead">Building reliable web and mobile automation, from framework design to release quality. I focus on raising the bar for myself and my team—not just shipping tests, but sustainable engineering.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#/experience">View experience</a>
+          <a class="btn btn-secondary" href="#/contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Personal Projects</h2>
-    <ul>
-      <li>
-        <strong>Appium Automation Framework</strong> - This framework is compatible for iOS and Android native application automation. This also supports cloud-based platforms like Browserstack and Lambdatest.
-        <br>
-        <a href="https://github.com/bijitbiswas/AutomationProject-Appium-TestNG" target="_blank">View on GitHub</a>
-      </li>
-      <li>
-        <strong>Selenium Web Automation Project</strong>
-        <br>
-        <a href="https://github.com/bijitbiswas/AutomationProject-Selenium-TestNG" target="_blank">View on GitHub</a>
-      </li>
-    </ul>
-  </section>
+    <section id="view-about" class="view" tabindex="-1" aria-label="About">
+      <div class="section-inner">
+        <h2>About</h2>
+        <p class="prose">I am more a leader than a manager: I want to uplift myself and raise the standards of others. Over the years I have not only automated scripts but also helped teammates grow through better practices and shared ownership.</p>
+        <div class="card">
+          <h3 class="card-title" style="margin-bottom:0.5rem">Certification</h3>
+          <p class="prose" style="margin:0">ISTQB Foundation Level Certification</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:biswas.bijit1994@gmail.com">biswas.bijit1994@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/bijitbiswas" target="_blank">https://github.com/bijitbiswas</a></p>
-  </section>
+    <section id="view-experience" class="view" tabindex="-1" aria-label="Experience">
+      <div class="section-inner">
+        <h2>Employment</h2>
 
-  <footer>
-    <p>&copy; 2023 Bijit Biswas. All rights reserved.</p>
+        <article class="card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">SDET</h3>
+              <p class="card-company">Autodesk</p>
+            </div>
+            <span class="card-dates">Jul 2023 — Present</span>
+          </div>
+          <ul>
+            <li>Test planning, analysis, and monitoring across release cycles.</li>
+            <li>Load testing with JMeter and Taurus scripts on BlazeMeter.</li>
+            <li>API testing with Postman and Testim.io.</li>
+            <li>Tooling experience includes TestRail, BrowserStack, Amplitude, and Applitools.</li>
+            <li>Cross-browser and system testing; web automation with Selenium (Java) and JavaScript custom commands.</li>
+            <li>Built and evolved a mobile automation framework with Appium covering iOS, Android, and Windows applications.</li>
+            <li>Test scenario design with a focus on reducing redundancy.</li>
+            <li>Owned the mobile automation framework: dependency updates, third-party app integration, coverage across platforms, features such as retry logic and custom email reports, APIs and WebView in the same framework, Jenkins pipeline configuration, and stability improvements through XPath and approach optimization.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">Senior QA Engineer</h3>
+              <p class="card-company">Talentica Software</p>
+            </div>
+            <span class="card-dates">Sep 2019 — Jun 2023</span>
+          </div>
+          <ul>
+            <li><strong>Autodesk:</strong> Construction-domain product digitizing sheets, RFIs, submittals, and related workflows.</li>
+            <li><strong>QA stack:</strong> BrowserStack, App Center, Selenium, JavaScript, Testim.io, Appium, TestRail, JIRA, JMeter, Postman, BlazeMeter.</li>
+            <li><strong>Infor:</strong> Enterprise solution spanning financials, CRM, Global HR, education, and related domains.</li>
+            <li><strong>QA stack:</strong> Selenium, Infor TaaS, Postman.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">Test Automation Engineer</h3>
+              <p class="card-company">Tata Consultancy Services</p>
+            </div>
+            <span class="card-dates">Oct 2016 — Aug 2019</span>
+          </div>
+          <ul>
+            <li>Strong Selenium practice: complex XPath locators, dynamic XPath and iframe handling.</li>
+            <li>Project data creation through automation; shaping automation flow for new features.</li>
+            <li>Web structure with HTML5 and JavaScript; Maven, JUnit, and TestNG.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="view-skills" class="view" tabindex="-1" aria-label="Skills">
+      <div class="section-inner">
+        <h2>Skills &amp; tools</h2>
+        <p class="prose">Core strengths from hands-on delivery across web, mobile, API, and performance testing.</p>
+        <ul class="skill-tags">
+          <li>Selenium</li>
+          <li>Appium</li>
+          <li>Java</li>
+          <li>Kotlin</li>
+          <li>JavaScript</li>
+          <li>JIRA</li>
+          <li>Git</li>
+          <li>JMeter</li>
+          <li>Postman</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="view-education" class="view" tabindex="-1" aria-label="Education">
+      <div class="section-inner">
+        <h2>Education</h2>
+        <article class="card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">Bachelor of Technology, Electronics and Communication</h3>
+              <p class="card-company">Kalyani Government Engineering College</p>
+            </div>
+            <span class="card-dates">2012 — 2016</span>
+          </div>
+          <ul>
+            <li>Academic project: driver dizziness alarm using image processing in MATLAB.</li>
+            <li>BSNL Platinum Certificate Engineer Course — IP networking &amp; cyber security (IPC), mobile communication.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">Pre-graduation</h3>
+              <p class="card-company">Kendriya Vidyalaya, Steel Plant, Vizag</p>
+            </div>
+            <span class="card-dates">Class of 2011–12</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="view-projects" class="view" tabindex="-1" aria-label="Projects">
+      <div class="section-inner">
+        <h2>Highlighted repositories</h2>
+        <p class="prose">Open-source automation samples you can explore on GitHub.</p>
+        <ul class="project-links">
+          <li>
+            <strong>Appium + TestNG</strong>
+            <a href="https://github.com/bijitbiswas/AutomationProject-Appium-TestNG" target="_blank" rel="noopener noreferrer">github.com/bijitbiswas/AutomationProject-Appium-TestNG</a>
+          </li>
+          <li>
+            <strong>Selenium + TestNG</strong>
+            <a href="https://github.com/bijitbiswas/AutomationProject-Selenium-TestNG" target="_blank" rel="noopener noreferrer">github.com/bijitbiswas/AutomationProject-Selenium-TestNG</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="view-contact" class="view" tabindex="-1" aria-label="Contact">
+      <div class="section-inner">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span>Email</span>
+            <a href="mailto:biswas.bijit1994@gmail.com">biswas.bijit1994@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span>Phone</span>
+            <a href="tel:+918848231866">+91 88482 31866</a>
+          </div>
+          <div class="contact-item">
+            <span>LinkedIn</span>
+            <a href="https://www.linkedin.com/in/bijit-biswas-062520123/" target="_blank" rel="noopener noreferrer">linkedin.com/in/bijit-biswas-062520123</a>
+          </div>
+          <div class="contact-item">
+            <span>GitHub</span>
+            <a href="https://github.com/bijitbiswas" target="_blank" rel="noopener noreferrer">github.com/bijitbiswas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Bijit Biswas. Hosted on GitHub Pages.</p>
   </footer>
+
+  <script src="assets/js/app.js" defer></script>
 </body>
 </html>
